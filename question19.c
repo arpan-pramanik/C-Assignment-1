@@ -14,20 +14,14 @@ void printDigitInWords(int digit) {
         case 7: printf("Seven "); break;
         case 8: printf("Eight "); break;
         case 9: printf("Nine "); break;
-        default: break;
+        default: printf("Invalid "); break;
     }
 }
 
 int main() {
     int num, reversedNum = 0, remainder;
-
     printf("Enter an integer: ");
     scanf("%d", &num);
-
-    if (num == 0) {
-        printDigitInWords(0);
-        return 0;
-    }
 
     while (num != 0) {
         remainder = num % 10;
