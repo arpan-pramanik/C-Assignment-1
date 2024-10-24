@@ -5,7 +5,7 @@
 int main() {
     int n, sum = 0, i = 1;
 
-    printf("Enter a positive integer: ");
+    printf("Enter n value: ");
     scanf("%d", &n);
 
     while (i <= n) {
@@ -13,6 +13,7 @@ int main() {
         i++;
     }
 
-    printf("Sum of all natural numbers between 1 to %d is: %d\n", n, sum);
+    printf("Sum is: %d\n", sum);
+
     return 0;
 }
